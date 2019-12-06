@@ -38,19 +38,6 @@ query, ``find()`` returns an empty cursor.
 Example
 -------
 
-The following snippet finds documents from the ``movies``
-collection. It uses the following:
-
-- A **query document** that configures the query to return only
-  movies with a runtime of less than 15 minutes.
-
-- A **sort** that organizes returned documents in ascending order by
-  title (A->Z)
-
-- A **projection** that explicitly excludes the ``_id`` field from
-  returned documents and explicitly includes only the ``title`` and
-  ``imdb`` object (and its embedded fields).
-
 .. literalinclude:: /code-snippets/usage-examples/find.js
   :language: javascript
   :emphasize-lines: 18
